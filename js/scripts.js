@@ -4,14 +4,34 @@
 //  }
 //}
 
-function loopdaloop(number){
-  let answer;
-  if (number >= 0){
-    for (let i=1; i <= number; i++) {
-    answer = number * 5;
-    console.log(i*5);
-  } else if {}
-} else {
-  console.log("make yourself a positive");
+function loopdaloop(countTo, countBy) {
+  if (countTo === NaN || countBy === NaN) {
+    console.log("Please enter a number");
+  } else if (countTo <= 0 || countBy <= 0) {
+    console.log("Make yourself a positive");
+  } else {
+    for(let i=1; i <= countNumber; i++) {
+      console.log(i*countBy);
+    }
   }
-}  
+  }
+  
+  function loopdaloop(countTo, countBy) {
+    answer = [];
+    if (countTo === NAN || countBy === NaN) {
+      return ("Use a positve number");
+    } else if (countTo < 0 || countBy < 0) {
+      return ("Please enter a positive number");
+    } else if (countBy > countTo) {
+      return ("number your counting by is greater then number counting to");
+    } else {
+      for(let i = 0; i <= countTo; i++){
+        if (i % countBy === 0) {
+        answer.push(i);
+        }
+      }
+      return answer;
+    }
+  }
+  
+//replace console with answersArray = [] in project

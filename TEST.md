@@ -18,5 +18,9 @@ let number = -1
 loopdaloop(-1);
 Expected output: "make yourself positive"
 
-Test: "Return a message for negative inputs"
+Test: "Return a message for empty"
 Code:
+loopdaloop();
+Expected: "Please enter a number";
+
+
